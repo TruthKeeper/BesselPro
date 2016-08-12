@@ -19,7 +19,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, WaveActivity.class));
     }
 
-    public void wave_ball(View v) {
-        startActivity(new Intent(this, WaveBallActivity.class));
+    public void give_love(View v) {
+        startActivity(new Intent(this, GiveLoveActivity.class));
+    }
+
+    public void rain_refresh(View v) {
+        startActivity(new Intent(this, RainRefreshActivity.class));
     }
 }

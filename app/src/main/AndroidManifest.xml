@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.WaveActivity" />
-        <activity android:name=".activity.WaveBallActivity" />
+        <activity android:name=".activity.GiveLoveActivity" />
+        <activity android:name=".activity.RainRefreshActivity" />
     </application>
 
 </manifest>

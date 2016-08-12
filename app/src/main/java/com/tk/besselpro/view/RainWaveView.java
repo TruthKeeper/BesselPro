@@ -20,15 +20,15 @@ import java.util.List;
  */
 public class RainWaveView extends View {
     //最多同时几滴雨
-    private static final int MAX = 36;
+    private static final int MAX = 24;
     //雨点长度
     private static final int LENGTH = 18;
     //雨点悬空高度
     private static final int SPACE = 250;
     //雨速
-    private static final int RAIN_SPEED = 4;
+    private static final int RAIN_SPEED = 6;
 
-    private static final int DEGREE = 25;
+    private static final int DEGREE = 18;
     private static final int WAVE_WIDTH = 80;
     private Paint paint = new Paint();
     private Path path = new Path();
@@ -80,7 +80,7 @@ public class RainWaveView extends View {
     private void calculRain() {
         for (int i = 0; i < MAX; i++) {
             if (rainFList.get(i).y - LENGTH > (getHeight() >> 1)) {
-                rainFList.set(i, new PointF((float) (getWidth() * Math.random()), (float) -Math.random() * SPACE));
+                rainFList.set(i, new PointF((float) (getWidth() * Math.random()), 0));
             } else {
                 rainFList.get(i).offset(0, RAIN_SPEED);
             }
